@@ -1,16 +1,81 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="de">
 <head>
-    <title>Meine erste Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelly Studios</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#111;
+            color:white;
+        }
+
+        .startseite{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:60px;
+            padding:40px;
+        }
+
+        .startseite img{
+            width:450px;
+            max-width:100%;
+            border-radius:15px;
+            box-shadow:0 10px 30px rgba(0,0,0,.4);
+        }
+
+        .text h1{
+            font-size:80px;
+        }
+
+        .text p{
+            font-size:24px;
+            color:#dcdcdc;
+            margin-top:20px;
+        }
+
+        @media (max-width:900px){
+
+            .startseite{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .text h1{
+                font-size:50px;
+            }
+
+            .startseite img{
+                width:320px;
+            }
+
+        }
+    </style>
+
 </head>
 
 <body>
 
-<h1>Hallo Welt!</h1>
+<section class="startseite">
 
-<p>Das ist meine erste Website.</p>
+    <img src="hero.png" alt="Jelly Studios">
+
+    <div class="text">
+        <h1>Jelly Studios</h1>
+        <p>Wir entwickeln kreative Spiele und Software.</p>
+    </div>
+
+</section>
 
 </body>
-
 </html>
