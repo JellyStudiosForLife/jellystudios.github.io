@@ -2,21 +2,253 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Games | Jelly Studios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Games | Jelly Studios</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+
+nav {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+
+    background: #181818;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 30px;
+
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #ff6b4a;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+
+    padding: 80px 20px 40px;
+}
+
+.header h1 {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.header p {
+    color: #aaa;
+    font-size: 20px;
+}
+
+/* Games */
+
+.games {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 40px;
+}
+
+/* Game card */
+
+.game-card {
+
+    width: 360px;
+
+    background: #1d1d1d;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+.game-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.game-content {
+
+    padding: 25px;
+}
+
+.game-content h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.game-content p {
+
+    color: #aaa;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+.play-button {
+
+    display: inline-block;
+
+    background: #ff6b4a;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+.play-button:hover {
+
+    background: #ff856d;
+
+}
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    color: #666;
+
+    padding: 80px 20px 30px;
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-    <h1>Jelly Studios Games</h1>
 
-    <h2>Jelly Dungeons</h2>
+<nav>
 
-    <p>Our voxel dungeon crawler is currently in development.</p>
+<h2>Jelly Studios</h2>
 
-    <a href="../index.html">Back to Home</a>
+<div>
+
+<a href="../index.html">Home</a>
+
+<a href="index.html">Games</a>
+
+<a href="#">About</a>
+
+<a href="#">Contact</a>
+
+</div>
+
+</nav>
+
+
+<section class="header">
+
+<h1>Our Games</h1>
+
+<p>Games and projects created by Jelly Studios.</p>
+
+</section>
+
+
+<section class="games">
+
+
+<!-- JELLY DUNGEONS -->
+
+<div class="game-card">
+
+<img src="jelly-dungeons.png" alt="Jelly Dungeons">
+
+<div class="game-content">
+
+<h2>Jelly Dungeons</h2>
+
+<p>
+A voxel-style 3D dungeon crawler where you
+fight enemies, explore dungeons and collect loot.
+</p>
+
+<a
+class="play-button"
+href="https://jellystudiosforlife.github.io/JellyDungeons/">
+
+Play Game
+
+</a>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Jelly Studios</p>
+
+</footer>
+
 
 </body>
 
